@@ -261,6 +261,14 @@ class SitemapGenerator {
         }
     }
     /**
+     * Output the first sitemap content
+     * @return string
+     * @access public
+     */
+    public function outputSitemap() {
+        echo $this->sitemaps[0][1];
+    }
+    /**
      * If robots.txt file exist, will update information about newly created sitemaps.
      * If there is no robots.txt will, create one and put into it information about sitemaps.
      * @access public
